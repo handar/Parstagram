@@ -123,11 +123,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="581.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="kf2-Ah-Mp1">
-                                                    <rect key="frame" x="8" y="8" width="359" height="375"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="kf2-Ah-Mp1">
+                                                    <rect key="frame" x="7" y="8" width="375" height="375"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="359" id="Bkl-p8-cTn"/>
+                                                        <constraint firstAttribute="height" constant="375" id="Zfj-Jr-odg"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hadia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbr-uz-JYZ" userLabel="usernamelabel">
-                                                    <rect key="frame" x="8" y="397" width="45" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hadia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbr-uz-JYZ" userLabel="usernamelabel">
+                                                    <rect key="frame" x="7" y="391" width="45" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="NeX-aP-K1y"/>
                                                     </constraints>
@@ -135,8 +139,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="Wow, I love photos!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGf-s0-0F0" userLabel="captionLabel">
-                                                    <rect key="frame" x="61" y="392" width="148" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Wow, I love photos!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGf-s0-0F0" userLabel="captionLabel">
+                                                    <rect key="frame" x="60" y="392" width="148" height="20.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="148" id="MSU-ud-uzc"/>
                                                     </constraints>
@@ -153,8 +157,8 @@
                                                 <constraint firstItem="kf2-Ah-Mp1" firstAttribute="top" secondItem="fWA-Zy-wJm" secondAttribute="topMargin" constant="-3" id="gsg-RE-i3y"/>
                                                 <constraint firstItem="kf2-Ah-Mp1" firstAttribute="leading" secondItem="pbr-uz-JYZ" secondAttribute="leading" id="lxG-2C-sya"/>
                                                 <constraint firstItem="nGf-s0-0F0" firstAttribute="leading" secondItem="pbr-uz-JYZ" secondAttribute="trailing" constant="8" symbolic="YES" id="oeF-Ys-FxN"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="pbr-uz-JYZ" secondAttribute="bottom" constant="7" id="snQ-he-hdV"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="nGf-s0-0F0" secondAttribute="bottom" constant="6" id="u0C-lB-HUZ"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="pbr-uz-JYZ" secondAttribute="bottom" constant="7" id="snQ-he-hdV"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="nGf-s0-0F0" secondAttribute="bottom" constant="6" id="u0C-lB-HUZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
