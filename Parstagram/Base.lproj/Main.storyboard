@@ -151,6 +151,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="kf2-Ah-Mp1" firstAttribute="centerX" secondItem="fWA-Zy-wJm" secondAttribute="centerX" id="26c-CH-Wvl"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nGf-s0-0F0" secondAttribute="trailing" constant="20" symbolic="YES" id="N7M-LP-oPu"/>
                                                 <constraint firstItem="pbr-uz-JYZ" firstAttribute="top" secondItem="kf2-Ah-Mp1" secondAttribute="bottom" constant="8" symbolic="YES" id="Oom-jg-XaH"/>
                                                 <constraint firstItem="kf2-Ah-Mp1" firstAttribute="leading" secondItem="fWA-Zy-wJm" secondAttribute="leadingMargin" constant="-8" id="bHN-L9-F05"/>
                                                 <constraint firstItem="nGf-s0-0F0" firstAttribute="top" secondItem="kf2-Ah-Mp1" secondAttribute="bottom" constant="9" id="ddQ-tl-weg"/>
