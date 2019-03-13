@@ -23,6 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "http://secure-harbor-46651.herokuapp.com/parse"
             })
         )
+        
+        if PFUser.current() != nil {
+            let main = UIStoryboard (name: "Main", bundle: nil)
+            let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
+            window?.rootViewController = feedNavigationController
+        }
         return true
     }
 
