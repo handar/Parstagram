@@ -55,7 +55,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let post = posts [indexPath.section]
-        let comments = (post["comment"] as? [PFObject]) ?? []
+        let comments = (post["comments"] as? [PFObject]) ?? []
         
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
