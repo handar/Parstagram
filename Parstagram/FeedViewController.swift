@@ -91,7 +91,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.reloadData()
         
         //Clear and dismiss the input bar
-        commentBar.inputTextView.resignFirstResponder()
+    commentBar.inputTextView.resignFirstResponder()
         
         commentBar.inputTextView.text = nil
         showsCommentBar = false
@@ -134,7 +134,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 as! CommentCell
             
             let comment = comments[indexPath.row-1]
-            cell.nameLabel.text = comment["text"] as? String
+            cell.commentLabel.text = comment["text"] as? String
             
             let user = comment["author"] as! PFUser
             cell.nameLabel.text = user.username
